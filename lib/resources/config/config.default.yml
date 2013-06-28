@@ -1,0 +1,17 @@
+# websocket settings
+socketio:
+    enabled: true
+    port: 3001
+    options:
+        origins: '*:*'
+        store:
+            type: memory
+            options:
+
+
+        heartbeats: true
+        resource: /socket.io
+        transports: [websocket, htmlfile, xhr-polling, jsonp-polling]
+        authorization: false
+
+        log level: 3

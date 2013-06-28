@@ -1,0 +1,11 @@
+parameters:
+
+    socketio.listener.constructor: conga-socketio:socketio
+
+services:
+
+    # the socketio kernel listener
+    socketio.listener:
+        constructor: "%socketio.listener.constructor%"
+        tags:
+            - { name: kernel.event, event: kernel.server_boot, method: onServerBoot, priority: 64 }
