@@ -1,6 +1,6 @@
 {
   "name": "conga-socketio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Conga.js bundle which adds Socket.IO to an application",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
   "author": "Marc Roulias",
   "license": "MIT",
   "dependencies": {
-    "socket.io": "0.9.16"
+    "socket.io": "1.4.5"
   },
   "devDependencies": {
   },
